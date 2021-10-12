@@ -1,9 +1,8 @@
-To inscrease mouse wheel scroll we will need to install imwheel program
-
+Install imwheel
 	sudo apt-get install imwheel
-	
-Next in ~/ folder create file .imwheelrc and write
 
+Create .imwheerc in home directory 
+cd $home
 | ~/.imwheelrc |
 	
 	 ".*"
@@ -14,14 +13,11 @@ Next in ~/ folder create file .imwheelrc and write
 	 Shift_L,   Up,   Shift_L|Button4
 	 Shift_L,   Down, Shift_L|Button5
 	 
-Value "3" is speed, change in to whatever number you want.
 
-To this changes actually affect scrolling speed we need to restart imwheel script
-
+Restart imwheel
 	killall imwheel && imwheel -b "4 5"
 
-To avoid runnig this scrip manually every time, add it to startup applications
-	
+Create startup app for imwheel
 | Startup Applications |
 	
 	Name: imwheel
