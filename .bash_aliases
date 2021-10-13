@@ -1,3 +1,8 @@
+# Directories
+alias dotfiles="cd $HOME/code/dotfiles"
+alias cod="cd $HOME/code"
+alias lara="cd $HOME/code/laravel"
+
 # Git aliases
 alias gst="git status"
 alias gb="git branch"
@@ -101,5 +106,5 @@ function docker_php_rm {
         echo
         echo "Current Docker images:";
         docker image ls
-
 }
+
