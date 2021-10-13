@@ -1,3 +1,12 @@
+# Git aliases
+alias gst="git status"
+alias gb="git branch"
+alias commit="git add . && git commit -m"
+alias diff="git diff"
+alias clone="git clone"
+alias pull="git pull"
+alias push="git push"
+
 # Alias for running Laravel Sail commands
 alias sail="./vendor/bin/sail"
 
