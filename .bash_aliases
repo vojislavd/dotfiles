@@ -11,6 +11,7 @@ alias diff="git diff"
 alias clone="git clone"
 alias pull="git pull"
 alias push="git push"
+alias reflog="git reflog"
 
 # Alias for running Laravel Sail commands
 alias sail="./vendor/bin/sail"
