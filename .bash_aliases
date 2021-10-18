@@ -13,6 +13,16 @@ alias pull="git pull"
 alias push="git push"
 alias reflog="git reflog"
 
+# Laravel aliases
+function tinker {
+	if [ -z "$1" ]
+		then
+			./vendor/bin/sail artisan tinker
+		else
+			./vendor/bin/sail artisan tinker --execute="dd($1);"
+	fi
+}
+
 # Alias for running Laravel Sail commands
 alias sail="./vendor/bin/sail"
 
