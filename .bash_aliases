@@ -21,7 +21,12 @@ function tinker {
 		else
 			./vendor/bin/sail artisan tinker --execute="dd($1);"
 	fi
+			
 }
+alias migrate="./vendor/bin/sail artisan migrate"
+alias fresh="./vendor/bin/sail artisan migrate:fresh"
+alias seed="./vendor/bin/sail artisan db:seed"
+
 
 # Alias for running Laravel Sail commands
 alias sail="./vendor/bin/sail"
