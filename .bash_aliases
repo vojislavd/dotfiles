@@ -27,7 +27,6 @@ alias migrate="./vendor/bin/sail artisan migrate"
 alias fresh="./vendor/bin/sail artisan migrate:fresh"
 alias seed="./vendor/bin/sail artisan db:seed"
 
-
 # Alias for running Laravel Sail commands
 alias sail="./vendor/bin/sail"
 
@@ -49,7 +48,25 @@ function sail_composer_install {
     		composer install --ignore-platform-reqs
 }
 
-# Run php command with Laravel Sail
+# Require Sail existing project
+function sail_require {
+	docker run --rm \
+        -u "$(id -u):$(id -g)" \
+        -v $(pwd):/var/www/html \
+        -w /var/www/html \
+        laravelsail/php80-composer:latest composer require laravel/sail --dev;
+}
+
+# Install Sail to existing project
+function sail_install {
+	docker run --rm \
+        -u "$(id -u):$(id -g)" \
+        -v $(pwd):/var/www/html \
+        -w /var/www/html \
+        laravelsail/php80-composer:latest php artisan sail:install;
+}
+
+# Run PHP 8.0 command with Laravel Sail
 function sail_php {
 	docker run --rm \
 	-u "$(id -u):$(id -g)" \
@@ -57,6 +74,16 @@ function sail_php {
        	-w /var/www/html \
        	laravelsail/php80-composer:latest $1 $2 $3 $4;
 }
+
+# Run PHP 7.4 commands with Laravel Sail
+function sail_php74 {
+        docker run --rm \
+        -u "$(id -u):$(id -g)" \
+        -v $(pwd):/var/www/html \
+        -w /var/www/html \
+        laravelsail/php74-composer:latest $1 $2 $3 $4;
+}
+
 
 # Remove Docker container and volumes for project
 function docker_rm {
