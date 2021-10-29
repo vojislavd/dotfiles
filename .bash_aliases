@@ -151,3 +151,11 @@ function docker_php_rm {
         docker image ls
 }
 
+# Websites aliases
+alias yt="google-chrome https://youtube.com </dev/null >/dev/null 2>&1 & disown"
+alias tw="google-chrome https://twitter.com/home </dev/null >/dev/null 2>&1 & disown"
+alias lr="google-chrome https://laravel.com/docs/8.x </dev/null >/dev/null 2>&1 & disown"
+alias gm="firefox https://mail.google.com/ </dev/null >/dev/null 2>&1 & disown"
+alias li="firefox https://www.linkedin.com/feed/ </dev/null >/dev/null 2>&1 & disown"
+alias gh="firefox https://github.com/VojislavD </dev/null >/dev/null 2>&1 & disown"
+alias uw="firefox https://www.upwork.com/ab/find-work/ </dev/null >/dev/null 2>&1 & disown"
