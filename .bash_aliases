@@ -1,4 +1,6 @@
 # Directories
+alias ..="cd .."
+alias here="xdg-open ."
 alias dotfiles="cd $HOME/code/dotfiles"
 alias cod="cd $HOME/code"
 alias lara="cd $HOME/code/laravel"
@@ -66,7 +68,7 @@ function sail_install {
         laravelsail/php80-composer:latest php artisan sail:install;
 }
 
-# Run PHP 8.0 command with Laravel Sail
+# Run PHP 8.0 with Laravel Sail
 function sail_php {
 	docker run --rm \
 	-u "$(id -u):$(id -g)" \
@@ -75,7 +77,7 @@ function sail_php {
        	laravelsail/php80-composer:latest $1 $2 $3 $4;
 }
 
-# Run PHP 7.4 commands with Laravel Sail
+# Run PHP 7.4 with Laravel Sail
 function sail_php74 {
         docker run --rm \
         -u "$(id -u):$(id -g)" \
@@ -160,7 +162,3 @@ alias gm="firefox https://mail.google.com/ </dev/null >/dev/null 2>&1 & disown"
 alias li="firefox https://www.linkedin.com/feed/ </dev/null >/dev/null 2>&1 & disown"
 alias gh="firefox https://github.com/VojislavD </dev/null >/dev/null 2>&1 & disown"
 alias uw="firefox https://www.upwork.com/ab/find-work/ </dev/null >/dev/null 2>&1 & disown"
-
-# Aliases for directories navigation
-alias ..="cd .."
-alias here="xdg-open ."
