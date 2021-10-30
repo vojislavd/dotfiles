@@ -160,3 +160,7 @@ alias gm="firefox https://mail.google.com/ </dev/null >/dev/null 2>&1 & disown"
 alias li="firefox https://www.linkedin.com/feed/ </dev/null >/dev/null 2>&1 & disown"
 alias gh="firefox https://github.com/VojislavD </dev/null >/dev/null 2>&1 & disown"
 alias uw="firefox https://www.upwork.com/ab/find-work/ </dev/null >/dev/null 2>&1 & disown"
+
+# Aliases for directories navigation
+alias ..="cd .."
+alias here="xdg-open ."
