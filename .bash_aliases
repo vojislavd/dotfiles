@@ -152,6 +152,7 @@ function docker_php_rm {
 }
 
 # Websites aliases
+alias ch="google-chrome </dev/null >/dev/null 2>&1 & disown"
 alias yt="google-chrome https://youtube.com </dev/null >/dev/null 2>&1 & disown"
 alias tw="google-chrome https://twitter.com/home </dev/null >/dev/null 2>&1 & disown"
 alias lr="google-chrome https://laravel.com/docs/8.x </dev/null >/dev/null 2>&1 & disown"
