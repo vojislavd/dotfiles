@@ -94,6 +94,9 @@ function docker_rm {
 	echo
 	echo "Current Docker volumes:";
 	docker volume ls;
+	echo
+	echo "Current Docker networks:";
+	docker network ls;
 	echo "----------------------------------------------------------------";
 	echo
 	docker container rm -fv $1_laravel.test_1;
@@ -108,7 +111,9 @@ function docker_rm {
 	docker volume rm -f $1_sailmysql;
 	docker volume rm -f $1_sailredis;
 	docker volume rm -f $1_sailminio;	
-	echo "Docker Containers and Volumes Removed";
+
+	docker network rm $1_sail
+	echo "Docker Containers, Volumes and Networks Removed";
 	echo "----------------------------------------------------------------";
 	echo
 	echo "Docker containers:";
@@ -116,6 +121,9 @@ function docker_rm {
         echo
         echo "Docker volumes:";
         docker volume ls;
+		echo
+		echo "Docker networks:";
+		docker network ls;
 }
 
 # Run PHP docker container
@@ -131,6 +139,9 @@ function docker_php_rm {
 	echo
 	echo "Current Docker images:";
 	docker image ls
+	echo
+	echo "Current Docker networks:";
+	docker network ls
 	echo "----------------------------------------------------------------";
 	echo
 	docker container rm -fv $1_mysql_1
@@ -140,7 +151,9 @@ function docker_php_rm {
 	docker volume rm -f $1_mysqldata
 
 	docker image rm -f $1_php
-	echo "Docker Containers, Volumes and Images Removed";
+
+	docker network rm $1_default
+	echo "Docker Containers, Volumes, Images and Networks Removed";
 	echo "----------------------------------------------------------------";
 	echo
 	echo "Current Docker containers:";
@@ -151,6 +164,9 @@ function docker_php_rm {
         echo
         echo "Current Docker images:";
         docker image ls
+		echo
+        echo "Current Docker networks:";
+        docker network ls
 }
 
 # Websites aliases
