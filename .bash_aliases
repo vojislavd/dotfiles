@@ -4,6 +4,7 @@ alias here="xdg-open ."
 alias dotfiles="cd $HOME/code/dotfiles"
 alias cod="cd $HOME/code"
 alias lara="cd $HOME/code/laravel"
+alias packages="cd $HOME/code/packages"
 
 # Git aliases
 alias gst="git status"
