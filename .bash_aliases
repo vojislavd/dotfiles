@@ -9,13 +9,13 @@ alias packages="cd $HOME/code/packages"
 # Git aliases
 alias gst="git status"
 alias gb="git branch"
-alias gckout="git checkout"
-alias gcommit="git add . && git commit -m"
-alias gdiff="git diff"
-alias gclone="git clone"
-alias gpull="git pull"
-alias gpush="git push"
-alias greflog="git reflog"
+alias ckout="git checkout"
+alias commit="git add . && git commit -m"
+alias diff="git diff"
+alias clone="git clone"
+alias pull="git pull"
+alias push="git push"
+alias reflog="git reflog"
 
 # Laravel aliases
 function tinker {
