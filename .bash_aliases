@@ -17,6 +17,10 @@ alias pull="git pull"
 alias push="git push"
 alias reflog="git reflog"
 
+# LEMP
+alias lemp_start="sudo systemctl start nginx && sudo systemctl start mysql"
+alias lemp_stop="sudo systemctl stop nginx && sudo systemctl stop mysql"
+
 # Laravel aliases
 function tinker {
 	if [ -z "$1" ]
