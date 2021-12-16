@@ -92,6 +92,10 @@ function sail_php74 {
         laravelsail/php74-composer:latest $1 $2 $3 $4;
 }
 
+# NPM aliases
+alias npmi="npm install"
+alias npmd="npm run dev"
+alias npmw="npm run watch-poll"
 
 # Remove Docker container and volumes for project
 function docker_rm {
