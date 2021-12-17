@@ -21,6 +21,11 @@ alias reflog="git reflog"
 alias lemp_start="sudo systemctl start nginx && sudo systemctl start mysql"
 alias lemp_stop="sudo systemctl stop nginx && sudo systemctl stop mysql"
 
+# NPM aliases
+alias npmi="npm install"
+alias npmd="npm run dev"
+alias npmw="npm run watch-poll"
+
 # Laravel aliases
 function tinker {
 	if [ -z "$1" ]
@@ -92,10 +97,10 @@ function sail_php74 {
         laravelsail/php74-composer:latest $1 $2 $3 $4;
 }
 
-# NPM aliases
-alias npmi="npm install"
-alias npmd="npm run dev"
-alias npmw="npm run watch-poll"
+# Sail NPM aliases
+alias sail_npmi="sail npm install"
+alias sail_npmd="sail npm run dev"
+alias sail_npmw="sail npm run watch-poll"
 
 # Remove Docker container and volumes for project
 function docker_rm {
