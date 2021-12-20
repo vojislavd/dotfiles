@@ -21,6 +21,8 @@ alias ght='echo "$GITHUB_TOKEN"'
 # LEMP
 alias lemp_start="sudo systemctl start nginx && sudo systemctl start mysql"
 alias lemp_stop="sudo systemctl stop nginx && sudo systemctl stop mysql"
+alias mailhog="sudo ~/go/bin/MailHog"
+alias minio='sudo MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
 
 # NPM aliases
 alias npmi="npm install"
