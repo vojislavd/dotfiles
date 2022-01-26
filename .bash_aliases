@@ -60,7 +60,7 @@ function sail_composer_install {
    		-u "$(id -u):$(id -g)" \
    		-v $(pwd):/var/www/html \
    		-w /var/www/html \
-   		laravelsail/php80-composer:latest \
+   		laravelsail/php81-composer:latest \
     		composer install --ignore-platform-reqs
 }
 
@@ -70,7 +70,7 @@ function sail_require {
         -u "$(id -u):$(id -g)" \
         -v $(pwd):/var/www/html \
         -w /var/www/html \
-        laravelsail/php80-composer:latest composer require laravel/sail --dev;
+        laravelsail/php81-composer:latest composer require laravel/sail --dev;
 }
 
 # Install Sail to existing project
@@ -79,11 +79,20 @@ function sail_install {
         -u "$(id -u):$(id -g)" \
         -v $(pwd):/var/www/html \
         -w /var/www/html \
-        laravelsail/php80-composer:latest php artisan sail:install;
+        laravelsail/php81-composer:latest php artisan sail:install;
+}
+
+# Run PHP 8.1 with Laravel Sail
+function sail_php {
+	docker run --rm \
+	-u "$(id -u):$(id -g)" \
+       	-v $(pwd):/var/www/html \
+       	-w /var/www/html \
+       	laravelsail/php81-composer:latest $1 $2 $3 $4;
 }
 
 # Run PHP 8.0 with Laravel Sail
-function sail_php {
+function sail_php80 {
 	docker run --rm \
 	-u "$(id -u):$(id -g)" \
        	-v $(pwd):/var/www/html \
