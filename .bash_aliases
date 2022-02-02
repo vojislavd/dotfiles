@@ -42,6 +42,7 @@ function tinker {
 alias migrate="./vendor/bin/sail artisan migrate"
 alias fresh="./vendor/bin/sail artisan migrate:fresh"
 alias seed="./vendor/bin/sail artisan db:seed"
+alias pstan="./vendor/bin/phpstan analyse"
 
 # Alias for running Laravel Sail commands
 alias sail="./vendor/bin/sail"
