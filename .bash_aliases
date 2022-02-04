@@ -28,6 +28,7 @@ alias minio='sudo MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASS
 alias npmi="npm install"
 alias npmd="npm run dev"
 alias npmw="npm run watch-poll"
+alias npmb="npm run build"
 
 # Laravel aliases
 function tinker {
