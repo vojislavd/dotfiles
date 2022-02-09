@@ -6,6 +6,9 @@ alias cod="cd $HOME/code"
 alias lara="cd $HOME/code/laravel"
 alias packages="cd $HOME/code/packages"
 
+# Change PHP version
+alias phpv="sudo update-alternatives --config php"
+
 # Git aliases
 alias gst="git status"
 alias gb="git branch"
