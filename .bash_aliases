@@ -66,7 +66,7 @@ function lara_setup {
 
 alias hosts="sudo vim /etc/hosts"
 alias lara_new="composer create-project laravel/laravel --prefer-dist"
-alias perms="sudo chmod -R ugo+rw"
+alias perms="sudo chmod -R ugo+rwx"
 
 function lara_rm {
 	sudo rm -rf /var/www/$1.test;
