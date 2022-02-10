@@ -21,6 +21,7 @@ alias ght='echo "$GITHUB_TOKEN"'
 # LEMP server
 alias srv_up="sudo systemctl start nginx && sudo systemctl start mysql"
 alias srv_down="sudo systemctl stop nginx && sudo systemctl stop mysql"
+alias srv_reload="sudo systemctl reload nginx"
 alias mailhog="sudo ~/go/bin/MailHog"
 alias minio='sudo MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
 
@@ -64,7 +65,6 @@ function lara_setup {
 }
 
 alias hosts="sudo vim /etc/hosts"
-alias nginx_reload="sudo systemctl reload nginx"
 alias lara_new="composer create-project laravel/laravel --prefer-dist"
 alias perms="sudo chmod -R ugo+rw"
 
