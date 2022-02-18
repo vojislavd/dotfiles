@@ -81,6 +81,7 @@ alias fresh="php artisan migrate:fresh"
 alias seed="php artisan db:seed"
 alias pstan="./vendor/bin/phpstan analyse"
 alias coverage="XDEBUG_MODE=coverage php artisan test --coverage"
+alias schedule="php artisan schedule:run"
 
 # NPM aliases
 alias npmi="npm install"
