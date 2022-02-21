@@ -26,13 +26,13 @@ alias mailhog="sudo ~/go/bin/MailHog"
 alias minio='sudo MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
 
 function lara_setup {
-	sudo mkdir /var/www/$1.test;
-	sudo chmod -R ugo+rw /var/www/$1.test;
+	sudo mkdir /home/vojislav/code/$1.test;
+	sudo chmod -R ugo+rw /home/vojislav/code/$1.test;
 	sudo echo "server {
 	listen 80;
 	listen [::]:80;
 	server_name $1.test www.$1.test;
-	root /var/www/$1.test/public;
+	root /home/vojislav/code/$1.test/public;
 
 	add_header X-Frame-Options \"SAMEORIGIN\";
 	add_header X-Content-Type-Options \"nosniff\";
@@ -59,8 +59,8 @@ function lara_setup {
 	location ~ /\.(?!well-known).* {
 		deny all;
 	}
-}" > $1.test;
-	sudo mv $1.test /etc/nginx/sites-available/;
+}" > /home/vojislav/$1.test;
+	sudo mv /home/vojislav/$1.test /etc/nginx/sites-available/;
 	sudo ln -s /etc/nginx/sites-available/$1.test /etc/nginx/sites-enabled/;
 }
 
@@ -69,7 +69,7 @@ alias lara_new="composer create-project laravel/laravel --prefer-dist"
 alias perms="sudo chmod -R ugo+rw"
 
 function lara_rm {
-	sudo rm -rf /var/www/$1.test;
+	sudo rm -rf /home/vojislav/code/$1.test;
 	sudo rm -rf /etc/nginx/sites-enabled/$1.test;
 	sudo rm -rf /etc/nginx/sites-available/$1.test;
 }
