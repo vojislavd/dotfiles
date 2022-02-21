@@ -1,7 +1,7 @@
 # Directories
 alias ..="cd .."
 alias here="xdg-open ."
-alias cod="cd /var/www/"
+alias cod="cd $HOME/code/"
 
 # Change PHP version
 alias phpv="sudo update-alternatives --config php"
