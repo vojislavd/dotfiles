@@ -16,6 +16,7 @@ alias clone="git clone"
 alias pull="git pull"
 alias push="git push"
 alias reflog="git reflog"
+alias grst="git restore ."
 alias ght='echo "$GITHUB_TOKEN"'
 
 # LEMP server
