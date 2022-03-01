@@ -84,6 +84,7 @@ alias pstan="./vendor/bin/phpstan analyse"
 alias coverage="XDEBUG_MODE=coverage php artisan test --coverage"
 alias schedule="php artisan schedule:run"
 alias pest="./vendor/bin/pest"
+alias paratest="php artisan test --parallel"
 
 # NPM aliases
 alias npmi="npm install"
