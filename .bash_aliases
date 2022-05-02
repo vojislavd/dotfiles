@@ -32,11 +32,16 @@ function lara_setup {
 	sudo echo "server {
 	listen 80;
 	listen [::]:80;
+	listen 443 ssl;
+
 	server_name $1.test www.$1.test;
 	root /home/vojislav/code/$1.test/public;
 
 	add_header X-Frame-Options \"SAMEORIGIN\";
 	add_header X-Content-Type-Options \"nosniff\";
+	
+	ssl_certificate /etc/ssl/self-signed-cert/self-signed-cert.crt;
+	ssl_certificate_key /etc/ssl/self-signed-cert/self-signed-cert.key;
 
 	index index.php;
 
@@ -148,3 +153,4 @@ alias gm="firefox https://mail.google.com/ </dev/null >/dev/null 2>&1 & disown"
 alias li="firefox https://www.linkedin.com/feed/ </dev/null >/dev/null 2>&1 & disown"
 alias gh="firefox https://github.com/VojislavD </dev/null >/dev/null 2>&1 & disown"
 alias uw="firefox https://www.upwork.com/ab/find-work/ </dev/null >/dev/null 2>&1 & disown"
+
