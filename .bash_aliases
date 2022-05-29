@@ -95,6 +95,7 @@ alias paratest="php artisan test --parallel"
 # NPM aliases
 alias npmi="npm install"
 alias npmd="npm run dev"
+alias npmp="npm run prod"
 alias npmw="npm run watch-poll"
 alias npmb="npm run build"
 
