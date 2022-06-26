@@ -91,6 +91,7 @@ alias coverage="XDEBUG_MODE=coverage php artisan test --coverage"
 alias schedule="php artisan schedule:run"
 alias pest="./vendor/bin/pest"
 alias paratest="php artisan test --parallel"
+alias pint="./vendor/bin/pint"
 
 # NPM aliases
 alias npmi="npm install"
