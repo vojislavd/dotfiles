@@ -92,6 +92,7 @@ alias schedule="php artisan schedule:run"
 alias pest="./vendor/bin/pest"
 alias paratest="php artisan test --parallel"
 alias pint="./vendor/bin/pint"
+alias prep="npmb && pint && paratest"
 
 # NPM aliases
 alias npmi="npm install"
