@@ -2,6 +2,7 @@
 alias ..="cd .."
 alias here="xdg-open ."
 alias cod="cd $HOME/code/"
+alias osupdate="sudo apt-get update && sudo apt-get upgrade"
 
 # Change PHP version
 alias phpv="sudo update-alternatives --config php"
