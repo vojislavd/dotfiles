@@ -29,7 +29,7 @@
 		"body": [
 			"<?php\n\nnamespace App\\Action\\\\${1:name};\n\nclass ${2:ClassName}\n{\n\tpublic function ${3:name}(${4:Type} \\$${5:$params})\n\t{\n\t\t${0:# code...}\n\t}\n}"
 		],
-		"description": "Create new action class",
+		"description": "Create new class",
 	},
 	"New Function": {
 		"scope": "php",
@@ -53,15 +53,15 @@
 		"body": [
 			"/** @var array<string, string> */\npublic array \\$state = [];\n"
 		],
-		"description": "Create new action class",
+		"description": "Define Livewire $state property",
 	},
 
-	"Livewire fill property": {
+	"Livewire fill function": {
 		"scope": "php",
 		"prefix": "fill",
 		"body": [
 			"\\$this->fill([\n\t'${1}' => '${2}'\n];"
 		],
-		"description": "Create new action class",
+		"description": "Use Livewire $fill function",
 	},
 }
