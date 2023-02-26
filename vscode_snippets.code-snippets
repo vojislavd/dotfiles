@@ -19,7 +19,7 @@
 		"scope": "php",
 		"prefix": "action",
 		"body": [
-			"namespace App\\Action\\\\${1:Name};\n\nclass ${2:ClassName}\n{\n\tpublic function ${3:name}(${4:Type} \\$${5:$name})\n\t{\n\t\t${0:# code...}\n\t}\n}\n"
+			"namespace App\\Actions\\\\${1:Name};\n\nclass ${2:ClassName}\n{\n\tpublic function ${3:name}(${4:Type} \\$${5:$name})\n\t{\n\t\t${0:# code...}\n\t}\n}\n"
 		],
 		"description": "Create new class",
 	},
