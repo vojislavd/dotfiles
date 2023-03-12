@@ -29,6 +29,7 @@ alias srv_down="sudo systemctl stop nginx && sudo systemctl stop mysql && sudo s
 alias srv_reload="sudo systemctl reload nginx"
 alias mailhog="sudo ~/go/bin/MailHog"
 alias minio='sudo MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
+alias mailpit='sudo /usr/local/bin/mailpit'
 
 function lara_setup {
 	sudo mkdir /home/vojislav/code/$1.test;
