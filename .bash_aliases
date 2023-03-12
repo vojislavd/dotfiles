@@ -38,7 +38,6 @@ function lara_setup {
 	listen 80;
 	listen [::]:80;
 	listen 443 ssl;
-
 	server_name $1.test www.$1.test;
 	root /home/vojislav/code/$1.test/public;
 
@@ -47,26 +46,26 @@ function lara_setup {
 	
 	ssl_certificate /etc/ssl/self-signed-cert/self-signed-cert.crt;
 	ssl_certificate_key /etc/ssl/self-signed-cert/self-signed-cert.key;
-
+	
 	index index.php;
 
 	charset utf-8;
-
+	
 	location / {
 		try_files \$uri \$uri/ /index.php?\$query_string;
 	}
-
+	
 	location = /favicon.ico { access_log off; log_not_found off; }
 	location = /robots.txt  { access_log off; log_not_found off; }
-
+	
 	error_page 404 /index.php;
-
+	
 	location ~ \.php$ {
 		fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
 		fastcgi_param SCRIPT_FILENAME \$realpath_root\$fastcgi_script_name;
 		include fastcgi_params;
 	}
-
+	
 	location ~ /\.(?!well-known).* {
 		deny all;
 	}
