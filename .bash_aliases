@@ -61,7 +61,7 @@ function lara_setup {
 	error_page 404 /index.php;
 	
 	location ~ \.php$ {
-		fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+		fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
 		fastcgi_param SCRIPT_FILENAME \$realpath_root\$fastcgi_script_name;
 		include fastcgi_params;
 	}
@@ -164,3 +164,5 @@ alias gm="firefox https://mail.google.com/ </dev/null >/dev/null 2>&1 & disown"
 alias li="firefox https://www.linkedin.com/feed/ </dev/null >/dev/null 2>&1 & disown"
 alias gh="firefox https://github.com/VojislavD </dev/null >/dev/null 2>&1 & disown"
 alias uw="firefox https://www.upwork.com/ab/find-work/ </dev/null >/dev/null 2>&1 & disown"
+
+alias py="python3"
