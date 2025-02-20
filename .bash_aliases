@@ -27,7 +27,6 @@ alias ght='echo "$GITHUB_TOKEN"'
 alias srv_up="sudo systemctl start php8.2-fpm && sudo systemctl start nginx && sudo systemctl start mysql && sudo systemctl start redis-server"
 alias srv_down="sudo systemctl stop php8.2-fpm && sudo systemctl stop nginx && sudo systemctl stop mysql && sudo systemctl stop redis-server"
 alias srv_reload="sudo systemctl reload nginx"
-alias mailhog="sudo ~/go/bin/MailHog"
 alias minio='sudo MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
 alias mailpit='sudo /usr/local/bin/mailpit'
 
@@ -108,61 +107,9 @@ alias npmp="npm run prod"
 alias npmw="npm run watch-poll"
 alias npmb="npm run build"
 
-# Alias for running Laravel Sail commands
-alias sail="./vendor/bin/sail"
-
-# Create New Laravel Sail App
-function sail_new {
-	curl -s https://laravel.build/$1 | bash;
-}
-
-# Remove Docker container and volumes for project
-function docker_rm {
-	echo "Current Docker containers:";
-	docker container ls -a;
-	echo
-	echo "Current Docker volumes:";
-	docker volume ls;
-	echo
-	echo "Current Docker networks:";
-	docker network ls;
-	echo "----------------------------------------------------------------";
-	echo
-	docker container rm -fv $1_laravel.test_1;
-	docker container rm -fv $1_selenium_1;
-	docker container rm -fv $1_redis_1;
-	docker container rm -fv $1_meilisearch_1;
-	docker container rm -fv $1_mysql_1;
-	docker container rm -fv $1_mailhog_1;
-	docker container rm -fv $1_minio_1;
-
-	docker volume rm -f $1_sailmeilisearch;
-	docker volume rm -f $1_sailmysql;
-	docker volume rm -f $1_sailredis;
-	docker volume rm -f $1_sailminio;	
-
-	docker network rm $1_sail
-	echo "Docker Containers, Volumes and Networks Removed";
-	echo "----------------------------------------------------------------";
-	echo
-	echo "Docker containers:";
-        docker container ls -a;
-        echo
-        echo "Docker volumes:";
-        docker volume ls;
-		echo
-		echo "Docker networks:";
-		docker network ls;
-}
-
 # Websites aliases
 alias ch="google-chrome </dev/null >/dev/null 2>&1 & disown"
 alias yt="google-chrome https://youtube.com </dev/null >/dev/null 2>&1 & disown"
-alias tw="google-chrome https://twitter.com/home </dev/null >/dev/null 2>&1 & disown"
-alias lr="google-chrome https://laravel.com/docs/10.x </dev/null >/dev/null 2>&1 & disown"
-alias gm="firefox https://mail.google.com/ </dev/null >/dev/null 2>&1 & disown"
-alias li="firefox https://www.linkedin.com/feed/ </dev/null >/dev/null 2>&1 & disown"
-alias gh="firefox https://github.com/VojislavD </dev/null >/dev/null 2>&1 & disown"
-alias uw="firefox https://www.upwork.com/ab/find-work/ </dev/null >/dev/null 2>&1 & disown"
+alias lr="google-chrome https://laravel.com/docs/11.x </dev/null >/dev/null 2>&1 & disown"
 
 alias py="python3"
