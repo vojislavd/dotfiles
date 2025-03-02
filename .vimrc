@@ -17,12 +17,22 @@ set smartcase
 " Highlight search results
 set hlsearch
 
-" Keybinding Ctrl + n for toggle NERDTree
+" Keybindings
+
+" Ctrl+n = Toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+" Ctrl+p = Search files
+nmap <C-p> :Files<CR>
+ 
 call plug#begin('~/.vim/plugged')
 
-" NERDTree Plugin
+" NERDTree plugin
 Plug 'preservim/nerdtree'
 
+" fzf plugin
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
+
