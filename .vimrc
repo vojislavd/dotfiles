@@ -17,7 +17,8 @@ set smartcase
 " Highlight search results
 set hlsearch
 
-" Keybindings
+" Leader
+let mapleader = " "
 
 " Ctrl+n = Toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -25,6 +26,12 @@ map <C-n> :NERDTreeToggle<CR>
 " Ctrl+p = Search files
 nmap <C-p> :Files<CR>
  
+" space+t = Next tab
+nnoremap <Leader>t :tabn<CR>
+
+" space+w = Close tab
+nnoremap <Leader>w :tabclose<CR>
+
 call plug#begin('~/.vim/plugged')
 
 " NERDTree plugin
