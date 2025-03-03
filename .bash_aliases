@@ -73,16 +73,16 @@ function lara_setup {
 	sudo ln -s /etc/nginx/sites-available/$1.test /etc/nginx/sites-enabled/;
 }
 
+function lara_rm {
+        sudo rm -rf /home/vojislav/code/$1.test;
+        sudo rm -rf /etc/nginx/sites-enabled/$1.test;
+        sudo rm -rf /etc/nginx/sites-available/$1.test;
+}
+
 alias hosts="sudo vim /etc/hosts"
 alias lara_new="composer create-project laravel/laravel --prefer-dist"
 alias perms="sudo chmod -R ugo+rw"
 alias ci="composer install"
-
-function lara_rm {
-	sudo rm -rf /home/vojislav/code/$1.test;
-	sudo rm -rf /etc/nginx/sites-enabled/$1.test;
-	sudo rm -rf /etc/nginx/sites-available/$1.test;
-}
 
 # Laravel aliases
 alias art="php artisan"
@@ -114,3 +114,5 @@ alias yt="google-chrome https://youtube.com </dev/null >/dev/null 2>&1 & disown"
 alias lr="google-chrome https://laravel.com/docs/11.x </dev/null >/dev/null 2>&1 & disown"
 
 alias py="python3"
+
+alias vimnotes="vim ~/vimnotes.txt"
