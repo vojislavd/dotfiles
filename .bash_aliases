@@ -115,4 +115,4 @@ alias lr="google-chrome https://laravel.com/docs/11.x </dev/null >/dev/null 2>&1
 
 alias py="python3"
 
-alias vimnotes="vim ~/vimnotes.txt"
+alias vimnotes="vim $HOME/vimnotes.txt"
