@@ -20,10 +20,10 @@ set hlsearch
 " Leader
 let mapleader = " "
 
-" space+q = esc
-inoremap jj <Esc>
-nnoremap jj <Esc>
-vnoremap jj <Esc>
+" space+j = esc
+inoremap <Leader>j <Esc>
+nnoremap <Leader>j <Esc>
+vnoremap <Leader>j <Esc>
 
 " Ctrl+n = Toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -47,4 +47,3 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
-
