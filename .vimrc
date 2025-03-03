@@ -20,6 +20,11 @@ set hlsearch
 " Leader
 let mapleader = " "
 
+" space+q = esc
+inoremap <Leader>q <Esc>
+nnoremap <Leader>q <Esc>
+vnoremap <Leader>q <Esc>
+
 " Ctrl+n = Toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
