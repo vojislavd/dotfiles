@@ -114,5 +114,3 @@ alias yt="google-chrome https://youtube.com </dev/null >/dev/null 2>&1 & disown"
 alias lr="google-chrome https://laravel.com/docs/11.x </dev/null >/dev/null 2>&1 & disown"
 
 alias py="python3"
-
-alias vimnotes="vim $HOME/vimnotes.txt"
