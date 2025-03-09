@@ -20,9 +20,6 @@ fi
 # Load updated list to profiles
 dconf write /org/gnome/terminal/legacy/profiles:/list "$UPDATED_PROFILES"
 
-# Set name of new profile
-dconf write /org/gnome/terminal/legacy/profiles:/:$UUID/visible-name "'Vojislav'"
-
 # Make new profile defualt
 dconf write /org/gnome/terminal/legacy/profiles:/default "'$UUID'"
 
