@@ -24,8 +24,8 @@ alias grst="git restore ."
 alias ght='echo "$GITHUB_TOKEN"'
 
 # LEMP server
-alias srv_up="sudo systemctl start php8.2-fpm && sudo systemctl start nginx && sudo systemctl start mysql && sudo systemctl start redis-server"
-alias srv_down="sudo systemctl stop php8.2-fpm && sudo systemctl stop nginx && sudo systemctl stop mysql && sudo systemctl stop redis-server"
+alias srv_up="sudo systemctl start php8.4-fpm && sudo systemctl start nginx && sudo systemctl start mysql && sudo systemctl start redis-server"
+alias srv_down="sudo systemctl stop php8.4-fpm && sudo systemctl stop nginx && sudo systemctl stop mysql && sudo systemctl stop redis-server"
 alias srv_reload="sudo systemctl reload nginx"
 alias minio='sudo MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
 alias mailpit='sudo /usr/local/bin/mailpit'
