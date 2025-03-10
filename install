@@ -4,30 +4,33 @@ DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
 # Setup terminal
 # ---------------------------------------------------------------------------------------------------
-# Generate new uuid
-UUID=$(uuidgen)
+# Define custom uuid
+CUSTOM_UUID='1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a'
 
 # Get list of current profiles
 CURRENT_PROFILES=$(dconf read /org/gnome/terminal/legacy/profiles:/list)
 
-# Add new uuid to the list of profiles
-if [ -z "$CURRENT_PROFILES" ]; then
-UPDATED_PROFILES="['$UUID']"
-else
-UPDATED_PROFILES=$(echo "$CURRENT_PROFILES" | sed "s/\]$/,'$UUID']/")
+# If profile not exists already
+if ! echo $CURRENT_PROFILES | grep -q "'$CUSTOM_UUID'"; then
+	# Add custom uuid to the list of profiles
+	if [ -z "$CURRENT_PROFILES" ]; then
+		UPDATED_PROFILES="['$CUSTOM_UUID']"
+	else
+		UPDATED_PROFILES=$(echo "$CURRENT_PROFILES" | sed "s/\]$/,'$CUSTOM_UUID']/")
+	fi
+
+	# Load updated list of profiles
+	dconf write /org/gnome/terminal/legacy/profiles:/list "$UPDATED_PROFILES"
 fi
 
-# Load updated list of profiles
-dconf write /org/gnome/terminal/legacy/profiles:/list "$UPDATED_PROFILES"
-
-# Make new profile defualt
-dconf write /org/gnome/terminal/legacy/profiles:/default "'$UUID'"
+# Make custom profile defualt
+dconf write /org/gnome/terminal/legacy/profiles:/default "'$CUSTOM_UUID'"
 
 # Copy terminal settings to tmp location
 cp $DOTFILES/terminal-settings.conf /tmp/terminal-settings.conf
 
-# Add new uuid to terminal settings
-sed -i "s/NEW_UUID/$UUID/" /tmp/terminal-settings.conf
+# Add custom uuid to terminal settings configuration file
+sed -i "s/CUSTOM_UUID/$CUSTOM_UUID/" /tmp/terminal-settings.conf
 
 # Load terminal configuration
 dconf load /org/gnome/terminal/ < /tmp/terminal-settings.conf
