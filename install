@@ -44,3 +44,8 @@ rm -rf /tmp/terminal-settings.conf
 rm -rf $HOME/.bash_aliases
 ln -s $DOTFILES/.bash_aliases $HOME/.bash_aliases
 # ---------------------------------------------------------------------------------------------------
+
+# Setup tmux config
+# ---------------------------------------------------------------------------------------------------dd
+rm -rf $HOME/.tmux.conf
+ln -s $DOTFILES/.tmux.conf $HOME/.tmux.conf
