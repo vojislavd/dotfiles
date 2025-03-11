@@ -21,7 +21,7 @@ alias pushm="git push -u origin main"
 alias pushd="git push -u origin dev"
 alias reflog="git reflog"
 alias grst="git restore ."
-alias ght='echo "$GITHUB_TOKEN"'
+alias ght='echo "$GITHUB_TOKEN" | xclip -selection primary'
 
 # LEMP server
 alias srv_up="sudo systemctl start php8.4-fpm && sudo systemctl start nginx && sudo systemctl start mysql && sudo systemctl start redis-server"
