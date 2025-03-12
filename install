@@ -49,8 +49,3 @@ ln -s $DOTFILES/.bash_aliases $HOME/.bash_aliases
 # ---------------------------------------------------------------------------------------------------
 rm -rf $HOME/.tmux.conf
 ln -s $DOTFILES/.tmux.conf $HOME/.tmux.conf
-
-# Setup nvim config
-# ---------------------------------------------------------------------------------------------------
-rm -rf $HOME/.config/nvim
-ln -s $DOTFILES/nvim $HOME/.config/nvim
