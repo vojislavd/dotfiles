@@ -28,6 +28,9 @@ use('wbthomason/packer.nvim')
 -- Commenting support
 use('tpope/vim-commentary')
 
+-- Add, change, and delete surrounding text
+use('tpope/vim-surround')
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
