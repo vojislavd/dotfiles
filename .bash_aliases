@@ -23,6 +23,9 @@ alias reflog="git reflog"
 alias grst="git restore ."
 alias ght='echo "$GITHUB_TOKEN" | xclip -selection primary'
 
+# Dev
+alias srv="bash ~/scripts/tmux-dev-server.sh"
+
 # LEMP server
 alias srv_up="sudo systemctl start php8.4-fpm && sudo systemctl start nginx && sudo systemctl start mysql && sudo systemctl start redis-server"
 alias srv_down="sudo systemctl stop php8.4-fpm && sudo systemctl stop nginx && sudo systemctl stop mysql && sudo systemctl stop redis-server"

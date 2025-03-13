@@ -45,7 +45,12 @@ rm -rf $HOME/.bash_aliases
 ln -s $DOTFILES/.bash_aliases $HOME/.bash_aliases
 # ---------------------------------------------------------------------------------------------------
 
-# Setup tmux config
+# Setup tmux
 # ---------------------------------------------------------------------------------------------------
+# Setup config
 rm -rf $HOME/.tmux.conf
-ln -s $DOTFILES/.tmux.conf $HOME/.tmux.conf
+ln -s $DOTFILES/tmux/.tmux.conf $HOME/.tmux.conf
+
+# Setup dev server
+rm -rf $HOME/scripts/tmux-dev-server.sh
+ln -s $DOTFILES/tmux/tmux-dev-server.sh $HOME/scripts/tmux-dev-server.sh
