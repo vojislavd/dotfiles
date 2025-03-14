@@ -51,6 +51,14 @@ ln -s $DOTFILES/.bash_aliases $HOME/.bash_aliases
 rm -rf $HOME/.tmux.conf
 ln -s $DOTFILES/tmux/.tmux.conf $HOME/.tmux.conf
 
-# Setup dev server
+# tmux dev
 rm -rf $HOME/scripts/tmux-dev.sh
 ln -s $DOTFILES/tmux/tmux-dev.sh $HOME/scripts/tmux-dev.sh
+
+# Dev scripts
+# ---------------------------------------------------------------------------------------------------
+rm -rf $HOME/scripts/setup-laravel.sh
+ln -s $DOTFILES/dev/setup-laravel.sh $HOME/scripts/setup-laravel.sh
+
+rm -rf $HOME/scripts/remove-laravel.sh
+ln -s $DOTFILES/dev/remove-laravel.sh $HOME/scripts/remove-laravel.sh
