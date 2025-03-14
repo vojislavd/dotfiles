@@ -4,7 +4,7 @@ aliases() {
 	nvim $CODE/dotfiles/.bash_aliases	
 }
 alias ..="cd .."
-alias here="xdg-open ."
+alias open="xdg-open ."
 cod() { 
 	cd $CODE 
 }
@@ -44,6 +44,10 @@ alias srv-reload="sudo systemctl reload nginx"
 alias hosts="sudo vim /etc/hosts"
 alias minio='MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
 alias mailpit='sudo /usr/local/bin/mailpit'
+
+visit() {
+	bash $SCRIPTS/open-project-in-browser.sh
+}
 
 lara-setup() {
 	bash $SCRIPTS/setup-laravel.sh "$@"
