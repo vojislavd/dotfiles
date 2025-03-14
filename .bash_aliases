@@ -38,6 +38,7 @@ alias mailpit='sudo /usr/local/bin/mailpit'
 alias larasetup="bash ~/scripts/setup-laravel.sh"
 alias lararm="bash ~/scripts/remove-laravel.sh"
 alias laranew="composer create-project laravel/laravel --prefer-dist"
+alias laradocs="google-chrome https://laravel.com/docs/12.x </dev/null >/dev/null 2>&1 & disown"
 alias art="php artisan"
 alias migrate="php artisan migrate"
 alias fresh="php artisan migrate:fresh"
@@ -59,4 +60,3 @@ alias npmb="npm run build"
 
 # Websites aliases
 alias ch="google-chrome </dev/null >/dev/null 2>&1 & disown"
-alias lr="google-chrome https://laravel.com/docs/11.x </dev/null >/dev/null 2>&1 & disown"
