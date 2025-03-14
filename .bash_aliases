@@ -1,8 +1,12 @@
 # Directories
 alias ..="cd .."
 alias here="xdg-open ."
-alias cod="cd $HOME/code/"
-alias dotfiles="cd $HOME/code/dotfiles"
+cod() { 
+	cd $CODE 
+}
+dotfiles() { 
+	cd $CODE/dotfiles 
+}
 alias perms="sudo chmod -R ugo+rw"
 
 # OS update
@@ -24,7 +28,9 @@ alias grst="git restore ."
 alias ght='echo "$GITHUB_TOKEN" | xclip -selection primary'
 
 # Dev 
-alias dev="bash ~/scripts/tmux-dev.sh"
+dev() {
+	bash $SCRIPTS/tmux-dev.sh
+}
 alias srv-up="sudo systemctl start php8.4-fpm && sudo systemctl start nginx && sudo systemctl start mysql && sudo systemctl start redis-server"
 alias srv-down="sudo systemctl stop php8.4-fpm && sudo systemctl stop nginx && sudo systemctl stop mysql && sudo systemctl stop redis-server"
 alias srv-reload="sudo systemctl reload nginx"
@@ -32,8 +38,12 @@ alias hosts="sudo vim /etc/hosts"
 alias minio='MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
 alias mailpit='sudo /usr/local/bin/mailpit'
 
-alias lara-setup="bash ~/scripts/setup-laravel.sh"
-alias lara-rm="bash ~/scripts/remove-laravel.sh"
+lara-setup() {
+	bash $SCRIPTS/setup-laravel.sh "$@"
+}
+lara-rm() {
+	bash $SCRIPTS/remove-laravel.sh "$@"
+}
 alias lara-new="composer create-project laravel/laravel --prefer-dist"
 alias lara-docs="google-chrome https://laravel.com/docs/12.x </dev/null >/dev/null 2>&1 & disown"
 alias art="php artisan"

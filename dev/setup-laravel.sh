@@ -1,14 +1,14 @@
 #!/bin/bash
 
-sudo mkdir /home/vojislav/code/$1.test;
-sudo chmod -R ugo+rw /home/vojislav/code/$1.test;
+sudo mkdir $CODE/$1.test;
+sudo chmod -R ugo+rw $CODE/$1.test;
 
 sudo echo "server {
 	listen 80;
 	listen [::]:80;
 	listen 443 ssl;
 	server_name $1.test www.$1.test;
-	root /home/vojislav/code/$1.test/public;
+	root $CODE/$1.test/public;
 
 	add_header X-Frame-Options \"SAMEORIGIN\";
 	add_header X-Content-Type-Options \"nosniff\";
@@ -38,7 +38,7 @@ sudo echo "server {
 	location ~ /\.(?!well-known).* {
 		deny all;
 	}
-}" > /home/vojislav/$1.test;
-	sudo mv /home/vojislav/$1.test /etc/nginx/sites-available/;
+}" > $HOME/$1.test;
+	sudo mv $HOME/$1.test /etc/nginx/sites-available/;
 	sudo ln -s /etc/nginx/sites-available/$1.test /etc/nginx/sites-enabled/;
 
