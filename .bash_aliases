@@ -45,7 +45,7 @@ alias hosts="sudo vim /etc/hosts"
 alias minio='MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PASSWORD="$MINIO_PASSWORD" ~/minio server /mnt/data --console-address ":9001"'
 alias mailpit='sudo /usr/local/bin/mailpit'
 
-visit() {
+openurl() {
 	bash $SCRIPTS/open-project-in-browser.sh
 }
 
