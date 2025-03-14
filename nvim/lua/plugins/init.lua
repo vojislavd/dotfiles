@@ -1,4 +1,5 @@
 return {
-  -- Lazy.nvim itself
   "folke/lazy.nvim",
+  "nvim-telescope/telescope.nvim",
+  "nvim-treesitter/nvim-treesitter",
 }
