@@ -52,5 +52,5 @@ rm -rf $HOME/.tmux.conf
 ln -s $DOTFILES/tmux/.tmux.conf $HOME/.tmux.conf
 
 # Setup dev server
-rm -rf $HOME/scripts/tmux-dev-server.sh
-ln -s $DOTFILES/tmux/tmux-dev-server.sh $HOME/scripts/tmux-dev-server.sh
+rm -rf $HOME/scripts/tmux-dev.sh
+ln -s $DOTFILES/tmux/tmux-dev.sh $HOME/scripts/tmux-dev.sh
