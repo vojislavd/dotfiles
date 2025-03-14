@@ -14,6 +14,12 @@ dotfiles-install() {
 dotfiles() { 
 	cd $HOME/dotfiles 
 }
+keymaps() {
+	nvim $HOME/dotfiles/nvim/lua/keymaps.lua
+}
+options() {
+	nvim $HOME/dotfiles/nvim/lua/options.lua
+}
 alias perms="sudo chmod -R ugo+rw"
 
 # OS update
