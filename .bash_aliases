@@ -1,8 +1,15 @@
-# Directories
+# General
+alias vim="nvim"
+aliases() {
+	nvim $CODE/dotfiles/.bash_aliases	
+}
 alias ..="cd .."
 alias here="xdg-open ."
 cod() { 
 	cd $CODE 
+}
+dotfiles-install() {
+	$CODE/dotfiles/install
 }
 dotfiles() { 
 	cd $CODE/dotfiles 
