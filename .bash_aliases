@@ -1,7 +1,7 @@
 # General
 alias vim="nvim"
 aliases() {
-	nvim $CODE/dotfiles/.bash_aliases	
+	nvim $HOME/dotfiles/.bash_aliases	
 }
 alias ..="cd .."
 alias open="xdg-open ."
@@ -9,10 +9,10 @@ cod() {
 	cd $CODE 
 }
 dotfiles-install() {
-	$CODE/dotfiles/install
+	$HOME/dotfiles/install
 }
 dotfiles() { 
-	cd $CODE/dotfiles 
+	cd $HOME/dotfiles 
 }
 alias perms="sudo chmod -R ugo+rw"
 
