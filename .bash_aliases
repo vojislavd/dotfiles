@@ -21,6 +21,7 @@ options() {
 	nvim $HOME/dotfiles/nvim/lua/options.lua
 }
 alias perms="sudo chmod -R ugo+rw"
+alias install-from-deb="sudo dpkg -i $1"
 
 # OS update
 alias osupdate="sudo apt-get update && sudo apt-get upgrade"
