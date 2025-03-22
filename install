@@ -68,5 +68,5 @@ rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim
 
 # Install phpactor
-bash $DOTFILES/scripts/install-phpactor.sh
+bash $DOTFILES/scripts/install-intelephense.sh
 
