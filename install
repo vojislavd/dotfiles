@@ -72,4 +72,4 @@ ln -s $DOTFILES/nvim $HOME/.config/nvim
 # Install phpactor
 bash $DOTFILES/scripts/install-intelephense.sh
 
-echo "Installing done!"
+echo "Installation done!"
