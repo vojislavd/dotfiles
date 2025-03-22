@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Installing..."
+
 DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
 # Terminal
@@ -70,3 +72,4 @@ ln -s $DOTFILES/nvim $HOME/.config/nvim
 # Install phpactor
 bash $DOTFILES/scripts/install-intelephense.sh
 
+echo "Installing done!"
