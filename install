@@ -53,16 +53,20 @@ ln -s $DOTFILES/tmux/tmux-dev.sh $SCRIPTS/tmux-dev.sh
 
 # Setup Laravel project
 rm -rf $HOME/scripts/setup-laravel.sh
-ln -s $DOTFILES/dev/setup-laravel.sh $SCRIPTS/setup-laravel.sh
+ln -s $DOTFILES/scripts/setup-laravel.sh $SCRIPTS/setup-laravel.sh
 
 # Remove Laravel project
 rm -rf $HOME/scripts/remove-laravel.sh
-ln -s $DOTFILES/dev/remove-laravel.sh $SCRIPTS/remove-laravel.sh
+ln -s $DOTFILES/scripts/remove-laravel.sh $SCRIPTS/remove-laravel.sh
 
 # Open project in browser
 rm -rf $HOME/scripts/open-project-in-browser.sh
-ln -s $DOTFILES/dev/open-project-in-browser.sh $SCRIPTS/open-project-in-browser.sh
+ln -s $DOTFILES/scripts/open-project-in-browser.sh $SCRIPTS/open-project-in-browser.sh
 
 # Nvim
 rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim
+
+# Install phpactor
+bash $DOTFILES/scripts/install-phpactor.sh
+
