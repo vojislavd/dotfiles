@@ -9,3 +9,10 @@ vim.keymap.set('v', '<A-k>', ":move '<-2<CR>gv==gv")
 -- Go to the definition
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { noremap = true, silent = true })
 vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>', { noremap = true, silent = true })
+
+-- Multiple cursors
+vim.g.VM_Mappings = {
+  ["<C-S-j>"] = "<C-n>",  -- Move cursor down (use <C-n> default behavior)
+  ["<C-S-k>"] = "<C-p>",  -- Move cursor up (use <C-p> default behavior)
+}
+
