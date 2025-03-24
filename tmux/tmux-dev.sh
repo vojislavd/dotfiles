@@ -35,11 +35,16 @@ tmux send-keys -t $SESSION_NAME:1.1 "MINIO_ROOT_USER="$MINIO_USER" MINIO_ROOT_PA
 tmux send-keys -t $SESSION_NAME:1.2 "/usr/local/bin/mailpit" C-m
 
 # Create new window
-tmux new-window -t $SESSION_NAME -n "workspace"
+tmux new-window -t $SESSION_NAME -n "terminal"
 
 # Switch to code directory
-tmux send-keys -t $SESSION_NAME:workspace "cd ~/code/ && clear" C-m
+tmux send-keys -t $SESSION_NAME:terminal "cd ~/code/ && clear" C-m
+
+# Create new window
+tmux new-window -t $SESSION_NAME -n "vim"
+
+# Switch to code directory
+tmux send-keys -t $SESSION_NAME:vim "cd ~/code/ && clear" C-m
 
 # Attach to the session
 tmux attach -t $SESSION_NAME
-
