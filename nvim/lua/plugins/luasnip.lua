@@ -37,6 +37,17 @@ return {
             s('prop', {
                 t("public $"), i(1, ""), t(";"),
             }),
+            s('cls', {
+                t("<?php"),
+                t({ "", "" }),
+                t({ "", "namespace " }), i(1, ""), t(";"),
+                t({ "", "" }),
+                t({ "", "class "}), i(2, ""), 
+                t({ "", "{"}),
+                t({ "", "    " }), i(0, ""),
+                t({ "", "}"}),
+                t({ "", "" }),
+            }),
         })
 
         vim.keymap.set('i', '<C-k>', function() luasnip.expand() end, { noremap = true, silent = true })
