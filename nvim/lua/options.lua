@@ -13,6 +13,7 @@ vim.opt.list = true				                -- enable the below listchars
 vim.opt.listchars = { trail = '·', tab = '  ' }	-- add dot as trail char
 vim.opt.expandtab = true			            -- use spaces instead of tab	
 vim.opt.smartindent = true                      -- enable automatic indentation
+vim.opt.autoindent = true                       -- enable automatic indentation
 vim.opt.cmdheight = 0                           -- set height of command line area
 vim.opt.shiftwidth = 4                          -- number of spaces for shifting with < or >
 vim.opt.tabstop = 4                             -- number of spaces tab character represents
