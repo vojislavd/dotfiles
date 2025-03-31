@@ -26,6 +26,9 @@ helper() {
 todo() {
     nvim $HOME/todo.txt
 }
+actions() {
+    nvim $HOME/actions.txt
+}
 alias perms="sudo chmod -R ugo+rw"
 alias install-from-deb="sudo dpkg -i $1"
 
