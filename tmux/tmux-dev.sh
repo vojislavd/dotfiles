@@ -40,9 +40,6 @@ tmux new-window -t $SESSION_NAME -n "terminal"
 # Switch to code directory
 tmux send-keys -t $SESSION_NAME:terminal "cd ~/code/ && clear" C-m
 
-# Create new window
-tmux new-window -t $SESSION_NAME -n "vim"
-
 # Switch to code directory
 tmux send-keys -t $SESSION_NAME:vim "cd ~/code/ && clear" C-m
 
