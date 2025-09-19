@@ -38,6 +38,7 @@ alias phpv="sudo update-alternatives --config php"
 # Git aliases
 alias gst="git status"
 alias ckout="git checkout"
+alias gb="git branch"
 alias cm="git add . && git commit -m"
 alias diff="git diff"
 alias pull="git pull"
