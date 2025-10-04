@@ -1,10 +1,7 @@
 return {
     "neovim/nvim-lspconfig",
     config = function()
-        -- Setup your LSP configurations here
-        local lspconfig = require('lspconfig')
-
-        require('lspconfig').intelephense.setup({
+        vim.lsp.config('intelephense', {
             commands = {
                 IntelephenseIndex = {
                     function()
@@ -14,6 +11,8 @@ return {
             },
 
         })
+
+        vim.lsp.enable('intelephense')
     end
 }
 
