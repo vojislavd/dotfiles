@@ -73,6 +73,6 @@ ln -s $DOTFILES/nvim $HOME/.config/nvim
 bash $DOTFILES/scripts/install-intelephense.sh
 
 # Install shortcuts
-dconf load /org/gnome/settings-daemon/plugins/media-keys/ < $DOTFILES/shortcuts.conf
+bash $DOTFILES/shortcuts.sh
 
 echo "Installation done!"
