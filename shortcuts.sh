@@ -6,7 +6,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "[
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/',
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/',
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/',
-    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/'
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/',
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/'
 ]"
 
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Alt>E'"
@@ -33,10 +34,14 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/cus
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/command "'google-chrome https://chatgpt.com'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/name "'Open ChatGPT in Chrome browser'"
 
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/binding "'<Alt>S'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/command "'slack'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/name "'Open Slack'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/binding "'<Alt><Shift>A'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/command "'google-chrome https://chatgpt.com/?temporary-chat=true'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/name "'Open ChatGPT temporary chat in Chrome browser'"
 
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/binding "'<Alt>O'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/command "'clockify'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/name "'Open Clockify'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/binding "'<Alt>S'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/command "'slack'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/name "'Open Slack'"
+
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/binding "'<Alt>O'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/command "'clockify'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/name "'Open Clockify'"
