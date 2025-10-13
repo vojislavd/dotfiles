@@ -10,7 +10,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "[
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/',
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/',
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/',
-    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/'
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/',
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/'
 ]"
 
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Alt>E'"
@@ -60,3 +61,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/cus
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/binding "'<Alt>P'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/command "'1password'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/name "'Open 1Password'"
+
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/binding "'<Alt>T'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/command "'tableplus'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/name "'Open Tableplus'"
+
