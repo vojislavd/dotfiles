@@ -11,7 +11,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "[
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/',
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/',
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/',
-    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/'
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/',
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/'
 ]"
 
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Alt>E'"
@@ -66,3 +67,6 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/cus
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/command "'tableplus'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/name "'Open Tableplus'"
 
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/binding "'<Alt>Y'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/command "'brave-browser https://youtube.com --incognito'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/name "'Open Youtube'"
