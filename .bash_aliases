@@ -86,8 +86,7 @@ alias npmi="npm install"
 alias npmd="npm run dev"
 alias npmb="npm run build"
 
-# Websites aliases
-alias ch="google-chrome </dev/null >/dev/null 2>&1 & disown"
-gh() {
-	firefox https://github.com/$GITHUB_USERNAME </dev/null >/dev/null 2>&1 & disown
+# Exchange rates
+rsd-rates() {
+    bash $SCRIPTS/rsd-rates.sh "$@"
 }

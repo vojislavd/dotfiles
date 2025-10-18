@@ -65,6 +65,10 @@ ln -s $DOTFILES/scripts/remove-laravel.sh $SCRIPTS/remove-laravel.sh
 rm -rf $HOME/scripts/open-project-in-browser.sh
 ln -s $DOTFILES/scripts/open-project-in-browser.sh $SCRIPTS/open-project-in-browser.sh
 
+# RSD exchange rates
+rm -rf $HOME/scripts/rsd-rates.sh
+ln -s $DOTFILES/scripts/rsd-rates.sh $SCRIPTS/rsd-rates.sh
+
 # Nvim
 rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim
