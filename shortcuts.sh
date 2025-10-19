@@ -13,7 +13,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "[
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/',
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/',
     '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/',
-    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/'
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/',
+    '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/'
 ]"
 
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Alt>E'"
@@ -73,5 +74,9 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/cus
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/name "'Open Youtube'"
 
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/binding "'<Alt>X'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/name "'Open VS Code'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/command "'code'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/command "'code'"
+
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/binding "'<Alt>D'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/command "'discord'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/name "'Open Discord'"
