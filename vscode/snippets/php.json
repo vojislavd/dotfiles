@@ -1,0 +1,28 @@
+{
+    "PHP function template": {
+        "prefix": "func",
+        "body": [
+            "${1|public,private,protected|} function ${2:name}(${3:}): ${4:void}",
+            "{",
+            "   $0",
+            "}"
+        ],
+        "description": "Insert function template"
+    },
+    "PHP Action class": {
+        "prefix": "action",
+        "body": [
+            "namespace App\\Actions\\\\${1:};",
+            "",
+            "class ${2:className}",
+            "{",
+            "   public static function ${3:name}(${4:}): ${5:void}",
+            "   {",
+            "       $0",
+            "   }",
+            "}",
+            ""
+        ],
+        "description": "Insert action class template"
+    }
+}
