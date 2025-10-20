@@ -79,4 +79,7 @@ bash $DOTFILES/scripts/install-intelephense.sh
 # Install shortcuts
 bash $DOTFILES/shortcuts.sh
 
+# Setup VS Code configs
+bash $DOTFILES/scripts/install-vscode-setup.sh
+
 echo "Installation done!"
