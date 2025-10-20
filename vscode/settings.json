@@ -12,4 +12,5 @@
     "editor.lineHeight": 24,
     "editor.wordWrap": "on",
     "chat.disableAIFeatures": true,
+    "workbench.startupEditor": "none",
 }
