@@ -1,7 +1,7 @@
 # General
 alias vim="nvim"
 aliases() {
-	nvim $HOME/dotfiles/.bash_aliases	
+	nvim $DOTFILES/.bash_aliases	
 }
 alias ..="cd .."
 alias open="xdg-open ."
@@ -9,16 +9,16 @@ cod() {
 	cd $CODE 
 }
 dotfiles-install() {
-	$HOME/dotfiles/install
+	$DOTFILES/install
 }
 dotfiles() { 
-	cd $HOME/dotfiles 
+	cd $DOTFILES 
 }
 keymaps() {
-	nvim $HOME/dotfiles/nvim/lua/keymaps.lua
+	nvim $DOTFILES/nvim/lua/keymaps.lua
 }
 options() {
-	nvim $HOME/dotfiles/nvim/lua/options.lua
+	nvim $DOTFILES/nvim/lua/options.lua
 }
 helper() {
     nvim $HOME/helper.txt
