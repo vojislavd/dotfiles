@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+echo "Installing..."
+
+DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
+
+# Aliases
+rm -rf $HOME/.bash_aliases
+ln -s $DOTFILES/.bash_aliases $HOME/.bash_aliases
+
+echo "Instalation done!"
+
