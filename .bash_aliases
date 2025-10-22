@@ -28,7 +28,9 @@ alias reflog="git reflog"
 alias grst="git restore ."
 alias ght='printf "%s" "$GITHUB_TOKEN" | wl-copy'
 
-# Laravel
+# Dev
+alias srv-reload="sudo systemctl reload nginx"
+alias hosts="sudo nvim /etc/hosts"
 lara-setup() {
   bash $SCRIPTS/setup-laravel.sh "$@"
 }
