@@ -29,6 +29,12 @@ alias grst="git restore ."
 alias ght='printf "%s" "$GITHUB_TOKEN" | wl-copy'
 
 # Laravel
+lara-setup() {
+  bash $SCRIPTS/setup-laravel.sh "$@"
+}
+lara-rm() {
+  bash $SCRIPTS/remove-laravel.sh "$@"
+}
 alias art="php artisan"
 alias migrate="php artisan migrate"
 alias fresh="php artisan migrate:fresh"

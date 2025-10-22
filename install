@@ -8,5 +8,13 @@ DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 rm -rf $HOME/.bash_aliases
 ln -s $DOTFILES/.bash_aliases $HOME/.bash_aliases
 
+# Script setup-laravel
+rm -rf $SCRIPTS/setup-laravel.sh
+ln -s $DOTFILES/scripts/setup-laravel.sh $SCRIPTS/setup-laravel.sh
+
+# Script remove-laravel
+rm -rf $SCRIPTS/remove-laravel.sh
+ln -s $DOTFILES/scripts/remove-laravel.sh $SCRIPTS/remove-laravel.sh
+
 echo "Instalation done!"
 
