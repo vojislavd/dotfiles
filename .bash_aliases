@@ -28,3 +28,20 @@ alias reflog="git reflog"
 alias grst="git restore ."
 alias ght='printf "%s" "$GITHUB_TOKEN" | wl-copy'
 
+# Laravel
+alias art="php artisan"
+alias migrate="php artisan migrate"
+alias fresh="php artisan migrate:fresh"
+alias mfs="php artisan migrate:fresh --seed"
+alias tinker="php artisan tinker"
+alias pstan="./vendor/bin/phpstan analyse"
+alias paratest="php artisan test --parallel"
+alias pint="./vendor/bin/pint"
+alias prep="npm run build && ./vendor/bin/pint && php artisan test --parallel"
+alias ci="composer install"
+
+# Npm
+alias npmi="npm install"
+alias npmd="npm run dev"
+alias npmb="npm run build"
+
