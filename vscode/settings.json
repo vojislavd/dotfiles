@@ -1,0 +1,16 @@
+{
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.enablePreview": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
+    "window.zoomLevel": 1.8,
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 24,
+    "editor.wordWrap": "on",
+    "chat.disableAIFeatures": true,
+    "workbench.startupEditor": "none",
+}
