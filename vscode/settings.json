@@ -1,4 +1,5 @@
 {
+    "update.mode": "none",
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
     "workbench.activityBar.location": "hidden",
