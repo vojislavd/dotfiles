@@ -19,5 +19,9 @@ ln -s $DOTFILES/scripts/remove-laravel.sh $SCRIPTS/remove-laravel.sh
 # Setup VS Code configs
 bash $DOTFILES/scripts/install-vscode-setup.sh
 
+# Toggle laptop monitor scripts
+rm -rf $SCRIPTS/toggle-laptop-monitor.sh
+ln -s $DOTFILES/scripts/toggle-laptop-monitor.sh $SCRIPTS/toggle-laptop-monitor.sh
+
 echo "Instalation done!"
 
