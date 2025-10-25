@@ -47,6 +47,9 @@ alias paratest="php artisan test --parallel"
 alias pint="./vendor/bin/pint"
 alias prep="npm run build && ./vendor/bin/pint && php artisan test --parallel"
 alias ci="composer install"
+minio-up() {
+  minio server $MINIO_PATH
+}
 
 # Npm
 alias npmi="npm install"
