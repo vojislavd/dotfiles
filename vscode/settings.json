@@ -13,6 +13,5 @@
     "editor.lineHeight": 24,
     "editor.wordWrap": "on",
     "chat.disableAIFeatures": true,
-    "workbench.colorTheme": "Ocean Green: Dark",
     "workbench.startupEditor": "none",
 }
