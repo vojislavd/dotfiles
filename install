@@ -23,5 +23,9 @@ bash $DOTFILES/scripts/install-vscode-setup.sh
 rm -rf $SCRIPTS/toggle-laptop-monitor.sh
 ln -s $DOTFILES/scripts/toggle-laptop-monitor.sh $SCRIPTS/toggle-laptop-monitor.sh
 
+# Nvim
+rm -rf $HOME/.config/nvim
+ln -s $DOTFILES/nvim $HOME/.config/nvim
+
 echo "Instalation done!"
 
