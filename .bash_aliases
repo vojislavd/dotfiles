@@ -13,6 +13,9 @@ dotfiles-install() {
 dotfiles() {
   cd $DOTFILES
 }
+docs() {
+    cd $DOCS
+}
 alias perms="sudo chmod -R ugo+rw"
 
 # Git aliases
