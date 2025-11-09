@@ -8,6 +8,25 @@ return {
 		local builtin = require('telescope.builtin')
 
 		telescope.setup {
+            defaults = {
+                vimgrep_arguments = {
+                    "rg",
+                    "--color=never",
+                    "--no-heading",
+                    "--with-filename",
+                    "--line-number",
+                    "--column",
+                    "--smart-case",
+                    "--hidden", -- show hidden files
+                    "--no-ignore", -- optinoally include gitignore files
+                },
+            },
+            pickers = {
+                find_files = {
+                    hidden = true, -- show dotfiles
+                    no_ignore = true, -- include gitignogred files
+                },
+            },
 			extensions = {
 			},
 		}
