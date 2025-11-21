@@ -59,4 +59,4 @@ alias npmi="npm install"
 alias npmd="npm run dev"
 alias npmb="npm run build"
 
-alias todo="vim $HOME/todo.txt"
+alias todo="nvim $HOME/todo.txt"
