@@ -16,6 +16,9 @@ dotfiles() {
 docs() {
     cd $DOCS
 }
+todo() {
+    nvim $DOCS/todo.txt
+}
 alias perms="sudo chmod -R ugo+rw"
 
 # Git aliases
@@ -59,4 +62,3 @@ alias npmi="npm install"
 alias npmd="npm run dev"
 alias npmb="npm run build"
 
-alias todo="nvim $HOME/todo.txt"
