@@ -29,6 +29,11 @@ fi
 TMP_FILE="$DOWNLOADS/${BASENAME}_cut_tmp.mp3"
 ffmpeg -i "$CUT_FILE" -i "$COVER_FILE" -map 0:a -map 1 -c:a copy -c:v copy -id3v2_version 3 "$TMP_FILE" && mv "$TMP_FILE" "$CUT_FILE"
 
+# Clean up
+[ -f "$COVER_FILE" ] && rm -f "$COVER_FILE"
+[ -f "$MP3_FILE" ] && rm -f "$MP3_FILE"
+mv "$CUT_FILE" "$DOWNLOADS/$BASENAME.mp3"
+
 echo ""
 echo "--------------------------------------------"
 echo ""
