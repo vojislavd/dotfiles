@@ -23,6 +23,10 @@ bash $DOTFILES/scripts/install-vscode-setup.sh
 rm -rf $SCRIPTS/toggle-laptop-monitor.sh
 ln -s $DOTFILES/scripts/toggle-laptop-monitor.sh $SCRIPTS/toggle-laptop-monitor.sh
 
+# Download mp3 from Youtube
+rm -rf $SCRIPTS/download-yt-mp3.sh
+ln -s $DOTFILES/scripts/download-yt-mp3.sh $SCRIPTS/download-yt-mp3.sh
+
 # Nvim
 rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim

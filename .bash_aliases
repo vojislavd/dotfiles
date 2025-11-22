@@ -19,6 +19,9 @@ docs() {
 todo() {
     nvim $DOCS/todo.txt
 }
+download-yt-mp3() {
+    bash $SCRIPTS/download-yt-mp3.sh "$@"
+}
 alias perms="sudo chmod -R ugo+rw"
 
 # Git aliases
