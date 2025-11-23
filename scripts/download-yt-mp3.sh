@@ -1,7 +1,7 @@
 #!/bin/bash
 
 URL="${1%%&*}"
-START="$2"
+START="${2:-0}" # default to 0 seconds if not provided
 END="$3"
 
 # Get video name
