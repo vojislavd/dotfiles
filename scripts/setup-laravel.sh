@@ -8,7 +8,7 @@ sudo echo "server {
   listen [::]:80;
   listen 443 ssl;
   server_name $1.test www.$1.test;
-  root /$CODE/$1.test/public;
+  root $CODE/$1.test/public;
 
   add_header X-Frame-Options \"SAMEORIGIN\";
 	add_header X-Content-Type-Options \"nosniff\";
