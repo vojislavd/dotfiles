@@ -13,4 +13,5 @@
     "editor.lineHeight": 24,
     "editor.wordWrap": "on",
     "workbench.startupEditor": "none",
+    "claudeCode.preferredLocation": "panel",
 }
