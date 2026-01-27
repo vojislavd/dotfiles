@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+t",
+        "command": "better-phpunit.run",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "better-phpunit.run-file",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "better-phpunit.run-previous",
+        "when": "editorFocus"
+    }
+]
+
