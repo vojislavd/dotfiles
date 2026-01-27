@@ -10,7 +10,7 @@
     "window.zoomLevel": 1.8,
     "editor.minimap.enabled": false,
     "editor.fontSize": 16,
-    "editor.lineHeight": 24,
+    "editor.lineHeight": 28,
     "editor.wordWrap": "on",
     "workbench.startupEditor": "none",
     "claudeCode.preferredLocation": "panel",
