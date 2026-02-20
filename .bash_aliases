@@ -22,6 +22,9 @@ todo() {
 download-yt-mp3() {
     bash $SCRIPTS/download-yt-mp3.sh "$@"
 }
+ngrok-up() {
+    ngrok http --host-header="$@" 80
+}
 alias perms="sudo chmod -R ugo+rw"
 
 # Git aliases
