@@ -5,7 +5,6 @@
     "workbench.activityBar.location": "hidden",
     "workbench.editor.enablePreview": false,
     "workbench.layoutControl.enabled": false,
-    "window.commandCenter": false,
     "window.menuBarVisibility": "compact",
     "window.zoomLevel": 1.8,
     "editor.minimap.enabled": false,
