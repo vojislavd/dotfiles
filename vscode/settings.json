@@ -13,4 +13,5 @@
     "editor.wordWrap": "on",
     "workbench.startupEditor": "none",
     "claudeCode.preferredLocation": "panel",
+    "editor.stickyScroll.enabled": false,
 }
