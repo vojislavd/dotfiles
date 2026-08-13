@@ -7,7 +7,7 @@ vim.api.nvim_create_autocmd('FileType', {
 	pattern = 'php',
 	callback = function()
 		vim.opt_local.smartindent = true
-		vim.opt_local_autoindent = true
+		vim.opt_local.autoindent = true
 	end,
 })
 
