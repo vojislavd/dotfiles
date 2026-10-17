@@ -22,10 +22,6 @@ todo() {
 download-yt-mp3() {
     bash $SCRIPTS/download-yt-mp3.sh "$@"
 }
-ngrok-up() {
-    ngrok http --host-header="$@" 80
-}
-alias perms="sudo chmod -R ugo+rw"
 
 # Git aliases
 alias gst="git status"
@@ -41,14 +37,6 @@ alias grst="git restore ."
 alias ght='printf "%s" "$GITHUB_TOKEN" | wl-copy'
 
 # Dev
-alias srv-reload="sudo systemctl reload nginx"
-alias hosts="sudo nvim /etc/hosts"
-lara-setup() {
-  bash $SCRIPTS/setup-laravel.sh "$@"
-}
-lara-rm() {
-  bash $SCRIPTS/remove-laravel.sh "$@"
-}
 alias art="php artisan"
 alias migrate="php artisan migrate"
 alias fresh="php artisan migrate:fresh"
@@ -60,9 +48,6 @@ alias paratest="php artisan test --parallel"
 alias pint="./vendor/bin/pint"
 alias prep="npm run build && ./vendor/bin/pint && php artisan test --parallel"
 alias ci="composer install"
-minio-up() {
-  minio server $MINIO_PATH
-}
 
 # Npm
 alias npmi="npm install"
